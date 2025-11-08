@@ -1,9 +1,14 @@
+import os
 import pdfplumber
 import spacy
 from groq import Groq
 import json
+from dotenv import load_dotenv
+
+load_dotenv()  # <-- This loads the .env file
 
 API_KEY = os.getenv("GROQ_API_KEY")  
+
 
 
 def extract_text_from_pdf(pdf_path):
