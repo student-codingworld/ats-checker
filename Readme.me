@@ -1,7 +1,93 @@
-Run server cmd:  python manage.py runserver  
-Virtual environment activate cmd:  source /home/manjarolinux/Desktop/myProjects/ats-checker/venv/bin/activate
-INSTALL all packages at a time: pip install -r requirements.txt
 
-Admin PORT: http://127.0.0.1:8000/admin/ 
+## 🔹 Project Overview
+
+**Smart Resume Analyzer** is an AI-powered **ATS (Applicant Tracking System) Resume Checker** built with Django and Python.  
+It allows users to upload resumes and match them against job descriptions to:
+
+- Extract **skills** and experience from resumes
+- Categorize **projects by domain** (AI, Web, Cloud, etc.)
+- Calculate a **relevance score (0–100)** for the job description
+
+
+This project is ideal for **recruiters, hiring platforms, and job portals** looking to automate resume analysis.
+
+---
+
+## 🚀 Features
+
+- ✅ Upload and analyze resumes in PDF format  
+- ✅ Automated skill extraction and experience calculation  
+- ✅ Categorize projects based on domain  
+- ✅ AI-generated relevance ranking  
+- ✅ Free usage limit with upgrade prompt  
+- ✅ REST API support for integration with web or mobile apps  
+- ✅ Admin panel for managing Job Descriptions  
+
+---
+
+## 📂 Project Structure
+
+ats-checker/
+│
+├── core/
+│ ├── resumechecker/
+│ │ ├── views.py
+│ │ ├── serializer.py
+│ │ ├── analyzer.py
+│ │ └── models.py
+│ ├── settings.py
+│ └── urls.py
+│
+├── venv/ # Virtual environment
+├── manage.py
+├── requirements.txt
+└── README.md
+
+
+
+---
+
+## ⚡ Installation & Setup
+
+1. **Clone the repository**
+```bash
+git clone https://github.com/student-codingworld/ats-checker.git
+cd ats-checker
+
+
+Activate Virtual Environment
+pip install -r requirements.txt
+
+
+Install all dependencies
+pip install -r requirements.txt
+
+
+Run the server
+python manage.py runserver
+
+Access Admin Panel
+URL: http://127.0.0.1:8000/admin/
 Username: admin
 Password: 123
+
+
+
+🛠 API Endpoints
+Endpoint                  	Method                      	Description
+/api/jobdescription/	     GET	                      List all job descriptions
+/api/resume/	             POST	                      Upload and analyze resume
+
+
+
+🧑‍💻 About the Developer
+
+Pawan Patel – Final Year CSE Student | Full Stack Developer
+
+🌐 Portfolio: meetme.rf.gd
+
+📧 Email: ps3171495@gmail.com
+
+💼 Specializes in Django, React, AI integrations, and portfolio projects
+
+🚀 Passionate about building modern, responsive, and AI-powered web apps
