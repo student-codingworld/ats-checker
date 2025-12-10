@@ -16,7 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from resumechecker.views import JobDescriptionAPI,AnalyzeResumeAPI
+from resumechecker.views import JobDescriptionAPI,AnalyzeResumeAPI, home
 
 urlpatterns = [
     path('', home),  # Root URL
