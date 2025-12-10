@@ -7,6 +7,18 @@ from .serializer import JobDescriptionSerializer, JobDescription, ResumeSerializ
 from .analyzer import process_resume
 
 
+
+def home(request):
+    return HttpResponse("""
+        <h1>Welcome to ATS Checker!</h1>
+        <p>Use the following API endpoints:</p>
+        <ul>
+            <li><a href="/api/jobs">/api/jobs</a></li>
+            <li>/api/resume/ (POST method)</li>
+        </ul>
+    """)    
+
+
 class JobDescriptionAPI(APIView):
     def get(self, request):
         queryset = JobDescription.objects.all()
