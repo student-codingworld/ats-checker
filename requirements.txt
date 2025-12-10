@@ -12,6 +12,7 @@ cryptography==46.0.3
 cymem==2.0.11
 Django==5.2.8
 djangorestframework==3.16.1
+groq
 idna==3.11
 Jinja2==3.1.6
 langcodes==3.5.0
